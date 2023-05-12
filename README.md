@@ -35,6 +35,7 @@
     * Grace 
     * Ryul (https://github.com/likemilktea/ChatTrio1stProject)
 
+* * *
 
 ## 챗 GPT를 활용한 AI기반 옷 추천 프로그램
 
