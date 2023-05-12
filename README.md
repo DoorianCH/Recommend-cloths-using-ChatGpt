@@ -1,6 +1,6 @@
 * * *
 
-# 👍Recommend-cloths-using-ChatGpt
+# 👔Recommend-cloths-using-ChatGpt
 "Weather-based clothing recommendation service" using ChatGpt
 <img width = "80%" src ="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
 
@@ -40,7 +40,7 @@
 
 * * *
 
-# 👍챗 GPT를 활용한 AI기반 옷 추천 프로그램
+# 👔챗 GPT를 활용한 AI기반 의상 추천 프로그램
 
 ### 프로젝트 기간
     * 23-05-03 ~ 23-05-12
