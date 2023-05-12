@@ -23,7 +23,7 @@
     * CSS
     * Flask
 
-* using
+### using
     1. Start VsCode
     2. Run 'python3 app.py' on Python terminal
     3. Select host
