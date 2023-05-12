@@ -35,8 +35,8 @@
 
 ### Member
     * Jay 
-    * Grace (https://github.com/sgnoh/ChatGPT_Project)
-    * Ryul (https://github.com/likemilktea/ChatTrio1stProject)
+    * Grace(https://github.com/sgnoh/ChatGPT_Project)
+    * Ryul(https://github.com/likemilktea/ChatTrio1stProject)
 
 * * *
 
@@ -66,5 +66,5 @@
 
 ### 참가 멤버
     * Jay
-    * Grace (https://github.com/sgnoh/ChatGPT_Project)
-    * Ryul (https://github.com/likemilktea/ChatTrio1stProject)
+    * Grace(https://github.com/sgnoh/ChatGPT_Project)
+    * Ryul(https://github.com/likemilktea/ChatTrio1stProject)
