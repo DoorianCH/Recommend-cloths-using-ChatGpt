@@ -32,14 +32,14 @@
 
 
 
-* 참가 멤버
+* Member
     * Jay 
     * Grace 
     * Ryul (https://github.com/likemilktea/ChatTrio1stProject)
 
 * * *
 
-## 챗 GPT를 활용한 AI기반 옷 추천 프로그램
+# 챗 GPT를 활용한 AI기반 옷 추천 프로그램
 
 * 프로젝트 기간
     * 23-05-03 ~ 23-05-12
