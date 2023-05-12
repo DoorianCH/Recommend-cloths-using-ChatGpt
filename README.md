@@ -3,7 +3,7 @@
 # Recommend-cloths-using-ChatGpt
 "Weather-based clothing recommendation service" using ChatGpt
 
-### precaution & Error(23.05.12)
+### Precaution & Error(23.05.12)
     1. Don't show your Api_key in a public place!!!
     2. ImportError: cannot import name 'EVENT_TYPE_OPENED' from 'watchdog.events'
     => watchdog.events update : pip install --upgrade watchdog
