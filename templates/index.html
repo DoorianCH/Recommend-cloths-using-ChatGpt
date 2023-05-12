@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Gender</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='indexStyle.css')}}">
+    <!--"../static/styles.css"-->
+</head>
+<body>
+    <div class="container">
+        
+        <video autoplay muted loop id="bg-video">
+            <source src="{{url_for('static', filename='background_movie.mp4') }}">
+            
+            <source src="videos.mp4" type="video/mp4">
+        </video>
+        
+        <div class="overlay"></div>
+        <h1>Select Your Gender</h1>
+        <div class="button-container">
+            <a href="/male" class="gender-button male-button">Male</a>
+            <a href="/female" class="gender-button female-button">Female</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="../static/indexStyle.css">
+

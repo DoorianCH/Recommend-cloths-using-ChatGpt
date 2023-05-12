@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Female Clothes Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='femaleStyle.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Female Clothes Recommendations</h1>
+        <p>Recommended clothes for Females</p>
+        <form action="/result" method="get">
+            <input placeholder="상황을 입력해주세요." required name="userQuestion" type="text">
+            <button>결과 확인</button>
+        </form>
+        <br>
+        <a href="/" class="gender-button">Go Back</a>
+    </div>
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="../static/femaleStyle.css">

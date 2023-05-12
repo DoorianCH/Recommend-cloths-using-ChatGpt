@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='resultStyle.css')}}">
+    <script type=text/javascript src="{{url_for('static', filename='jquery.js') }}"></script>
+    <script type=text/javascript src="../static/jquery.js"></script>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Recommend    token : {{token}}</p>
+            {%for i in result%}
+            <ul>{{i}}</ul>
+            {%endfor%}
+        </div>
+        {% if token > 0 %}
+        <div class="container">
+            <form action="/result" method="get">
+                <input placeholder="상황을 입력해주세요." required name="userQuestion" type="text">
+                <button>결과 확인</button>
+            </form>
+        </div>
+        {%else%}
+        <div class="container">
+            <form action="/" method="get">
+                <button>처음으로 돌아가기</button>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+<link rel="stylesheet" type="text/css" href="../static/resultStyle.css">
+
+
