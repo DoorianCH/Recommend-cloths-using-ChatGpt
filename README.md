@@ -2,7 +2,7 @@
 
 # 👔Recommend-cloths-using-ChatGpt
 "Weather-based clothing recommendation service" using ChatGpt
-<img width = "80%" src ="https://images.pexels.com/photos/52509/penguins-emperor-antarctic-life-52509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+<img width = "80%" src ="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
 
 ### Precaution & Error(23.05.12)
     1. Don't show your Api_key in a public place!!!
