@@ -2,9 +2,29 @@
 <html>
 <head>
     <title>Male Clothes Recommendations</title>
+    <!-- 실행 화면 css -->
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='maleStyle.css')}}">
+    <!-- 로딩 화면 css -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css')}}">
+    <script>
+        // 로딩 중임을 알리는 이벤트 리스너
+        window.addEventListener('DOMContentLoaded', function() {
+            var loadingOverlay = document.getElementById('loading-overlay');
+            loadingOverlay.style.display = 'none';
+        });
+        window.addEventListener('beforeunload', function(event) {
+            var loadingOverlay = document.getElementById('loading-overlay');
+            loadingOverlay.style.display = 'flex';
+        });
+    </script>
 </head>
 <body>
+    <!-- 로딩 화면 -->
+    <div id="loading-overlay">
+        <div class="loader"></div>
+        <p>loading</p>
+    </div>
+    <!-- 실행 화면 -->
     <div class="container">
         <h1>Male Clothes Recommendations</h1>
         <p>Recommended clothes for Males</p>
