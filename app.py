@@ -1,13 +1,21 @@
-# 명령어 추가 리스트
-msg_input = [] # 추가할 명령어
-msg_result = [] # 결과값 
-aiToken = 3 # 사용회수
+#! pip install SpeechRecognition
+#! pip install pyaudio
+#! pip install gtts
 
+# 명령어 추가 리스트
+msg_input = [] # 명령어 리스트
+msg_result = [] # 결과값 리스트
+aiToken = 3 # 사용회수
+voiceAudio = "" # 음성인식 값 저장
+
+
+# ======================openai def======================
 # openAi api_key 가져오기, 질문 입력 및 답변 출력
 import openai
+
 # msg에는 웹에서 입력한 value 값 전달
 def openAi(msg):
-    key1 = "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$" #key값
+    key1 = "**********************************************" #key값
     openai.api_key = key1
     # {"role":"user", "content":msg}) => 답변, 
     msg_input.append( {"role":"user", "content":msg})
@@ -23,7 +31,7 @@ def openAi(msg):
     print(answers)
     return answers
 
-
+# ==================basicassistant def==================
 # 기본 명령어 추가 => """내용""""
 # system => 시스템의 기본적인 역할 부여
 # assistant => AI가 모르는 내용 보조
@@ -54,19 +62,47 @@ def weatherAssistant():
     msg_input.append({"role":"assistant","content":weather})
 
 
+# ===============speech_recognition을 통한 음성 인식===============
+# 다른 형태의 음성 인식 저장 가능
+import speech_recognition as sr
+def audioAI():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Say Something")
+        speech = r.listen(source)
+    try:
+        global voiceAudio 
+        voiceAudio = r.recognize_google(speech, language="ko-KR")
+        print("Your speech thinks like\n " + voiceAudio)
+    except sr.UnknownValueError:
+        print("Your speech can not understand")
+    except sr.RequestError as e:
+        print("Request Error!; {0}".format(e))
+    return voiceAudio
+
+# ===============gtts를 통한 음성 출력===============
+from gtts import gTTS
+def audioOutput(answers):
+    tts = gTTS(text=answers, lang="ko")
+    #여성 ko-KR-Neural2-A,ko-KR-Neural2-B 남성 :ko-KR-Neural2-C
+    #여성 음성은 유료$$$
+    tts.voice = "ko-KR-Neural2-C"
+    tts.save("static\output.mp3")
+
 #============================ flask 실행============================
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
 #  index페이지, 기본 페이지
-@app.route('/')
+@app.route('/') # 루트 설정
 def home():
     global aiToken #변수 선언
     aiToken = 3 # Token 재설정
+    global voiceAudio
+    voiceAudio = ""
     msg_input.clear() # Chat 명령어 초기화
     basicAssistant() # 기본 assistant 추가
     weatherAssistant() # 날씨 assistant 추가
-    print(msg_input)
     return render_template('index.html')
 
 # male페이지
@@ -89,15 +125,26 @@ def femalePage():
     print(msg_input)
     return render_template('female.html')
 
+# voice페이지
+@app.route('/voice')
+def voicePge():
+    #voice 요소 추가
+    audioAI()
+    return render_template('voice.html')
+
+
 # result 페이지
 @app.route('/result')
 def resultPage():
+    # 동영상 음성재생 pygame
+
     global aiToken # token 개수 설정
     aiToken=aiToken-1 # 사용시 하나씩 줄어듬
     
     userQuestion = request.args.get("userQuestion")
     aiResult = openAi(userQuestion) # 답변
     msg_result.append(aiResult) # 답변 리스트 저장
+    audioOutput(aiResult[0]) # 음성파일 변환 list=>str
     print(msg_result)
     print(aiToken)
     return render_template('result.html',result=msg_result, token=aiToken)

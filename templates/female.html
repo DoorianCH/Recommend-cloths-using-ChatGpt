@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>Female Clothes Recommendations</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='femaleStyle.css')}}">
+    <!-- 실행 화면 css -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='clothes-component.css')}}">
     <!-- 로딩 화면 css -->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='loading.css')}}">
     <script>
         // 로딩 중임을 알리는 이벤트 리스너
         window.addEventListener('DOMContentLoaded', function() {
@@ -25,16 +26,21 @@
     </div>
     <!-- 실행 화면 -->    
     <div class="container">
-        <h1>Female Clothes Recommendations</h1>
-        <p>Recommended clothes for Females</p>
+        <h1><span style="color:#BE81BC;">Female</span> Clothes Recommendations</h1>
+        <p>Hello😎 Please tell me when to dress up </p>
         <form action="/result" method="get">
             <input placeholder="상황을 입력해주세요." required name="userQuestion" type="text">
-            <button>결과 확인</button>
+            <button>Result</button>
+        </form>
+        <form action="/voice" method="get">
+            <button id="mic__btn"><i class="fas fa-microphone"></i></button>
+            <!--<button><img src="{{url_for('static', filename='microphone.png')}}" alt="Microphone"></button>-->
         </form>
         <br>
-        <a href="/" class="gender-button">Go Back</a>
+        <a href="/" class="gender-button">Go Back <i class="fas fa-undo-alt"></i></a>
     </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
+<link rel="stylesheet" type="text/css" href="../static/clothes-component.css">
 <link rel="stylesheet" type="text/css" href="../static/femaleStyle.css">

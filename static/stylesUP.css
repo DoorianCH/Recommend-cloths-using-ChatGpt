@@ -1,0 +1,103 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,600;1,700;1,800&family=Lobster&family=Quicksand:wght@300;400;500&family=Shrikhand&display=swap');
+a{
+    text-decoration: none;
+    color:  #b8e5a1;
+    }
+/* Layout */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    color: #b8e5a1;
+}
+
+main{
+    width: 50%;
+    padding-left: 5vw;
+    padding-top: 2vw;
+}
+
+
+
+aside{
+    width: 50%;
+    background-image: url("https://images.pexels.com/photos/6069566/pexels-photo-6069566.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size: cover;
+    background-position: center;
+    /* animation-name: bgChange;
+    animation-duration: 2s; */
+    animation: 10s linear 2s infinite alternate bgChange;
+}
+
+@keyframes bgChange{
+   0%{background-image:url("https://images.pexels.com/photos/6069566/pexels-photo-6069566.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    10%{background-image:url("https://images.pexels.com/photos/7667440/pexels-photo-7667440.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    20%{background-image:url("https://images.pexels.com/photos/7679732/pexels-photo-7679732.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    30%{background-image:url("https://images.pexels.com/photos/8307704/pexels-photo-8307704.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    40%{background-image:url("https://images.pexels.com/photos/6050421/pexels-photo-6050421.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    50%{background-image:url("https://images.pexels.com/photos/5734462/pexels-photo-5734462.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+
+
+    
+    80%{background-image:url("https://images.pexels.com/photos/13923708/pexels-photo-13923708.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    90%{background-image:url("https://images.pexels.com/photos/14582759/pexels-photo-14582759.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+    100%{background-image:url("https://images.pexels.com/photos/1254500/pexels-photo-1254500.jpeg?auto=compress&cs=tinysrgb&w=1600");}
+     
+   
+    
+}
+
+/* font & design */
+
+.header{
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+.title{
+    margin-top: 10%;
+    font-size: 7vw;
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+}
+
+.title span{
+    display: inline-block;
+    width: 20%;
+    border-bottom: 1px solid #b8e5a1;
+    margin-right: 20px;
+}
+
+.title h3{
+    font-size: 3vw;
+    margin-top: 15px;
+}
+
+.title__btns{
+    margin-top: 100px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title__btns a{
+    text-transform: capitalize;
+    padding: 20px 45px;
+    border-radius: 10px;
+    border: 1px solid #b8e5a1;
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* hover effect */
+.title__btns a:hover{
+    background-color: #b8e5a1;
+    color: black;
+    transition: all linear 0.3s;
+}
+
