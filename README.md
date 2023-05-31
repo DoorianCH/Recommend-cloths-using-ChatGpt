@@ -34,9 +34,9 @@
 
 
 ### Member
-    * Jay 
-    * Grace(https://github.com/sgnoh/ChatGPT_Project)
-    * Ryul(https://github.com/likemilktea/ChatTrio1stProject)
+    * Jay(최재광)
+    * Ryul(률)
+RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
 
 * * *
 
@@ -65,6 +65,6 @@
     4. 가이드에 따라 성별 선택, 질문내용 작성하기
 
 ### 참가 멤버
-    * Jay
-    * Grace(https://github.com/sgnoh/ChatGPT_Project)
-    * Ryul(https://github.com/likemilktea/ChatTrio1stProject)
+    * Jay(최재광)
+    * Ryul(률)
+RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
