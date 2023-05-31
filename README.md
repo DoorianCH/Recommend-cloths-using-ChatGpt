@@ -37,7 +37,7 @@
     * Jay(최재광)
     * Ryul(률)
 RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
-(https://github.com/DoorianCH/Recommend-cloths-using-ChatGpt/assets/132414381/cdb8313b-8e63-44c2-806e-7257602256df
+<img src="https://github.com/DoorianCH/Recommend-cloths-using-ChatGpt/assets/132414381/cdb8313b-8e63-44c2-806e-7257602256df" width="70%" height="70%"/>
 
 * * *
 
