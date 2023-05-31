@@ -4,7 +4,7 @@
 "Weather-based clothing recommendation service" using ChatGpt
 <img width = "80%" src ="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
 
-### Precaution & Error(23.05.12)
+### Precaution & Error(23.05.31)
     1. Don't show your Api_key in a public place!!!
     2. ImportError: cannot import name 'EVENT_TYPE_OPENED' from 'watchdog.events'
     => watchdog.events update : pip install --upgrade watchdog
