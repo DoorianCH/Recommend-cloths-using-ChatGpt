@@ -16,7 +16,8 @@ body{
 .container{
     width: 50%;
     height: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 5vw;
     display: flex;
     flex-direction: column;
