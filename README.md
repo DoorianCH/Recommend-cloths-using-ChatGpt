@@ -34,10 +34,11 @@
 
 
 ### Member
-    * Jay(최재광)
-    * Ryul(률)
-RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
+    * Jay(최재광) : project planning, building chat gpt algorithm, Building the Dall_2 Algorithm, Promote Adjustment, Web Design
+    * Ryul(률) : Implementing a flask server, gtts voice output implementation, Web Domain Offerings, DB deployment, selenium crawling
 <img src="https://github.com/DoorianCH/Recommend-cloths-using-ChatGpt/assets/132414381/cdb8313b-8e63-44c2-806e-7257602256df" width="70%" height="70%"/>
+RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
+
 
 * * *
 
@@ -66,6 +67,7 @@ RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
     4. 가이드에 따라 성별 선택, 질문내용 작성하기
 
 ### 참가 멤버
-    * Jay(최재광)
-    * Ryul(률)
+    * Jay(최재광) : 프로젝트 기획, chat gpt 알고리즘 구축, Dall_2 알고리즘 구축, 프로모트 조정, 웹 디자인
+    * Ryul(률) : flask 서버 구현, gtts 음성 출력 구현, 웹 도메인 개설, DB 구축, selenium 크롤링
+<img src="https://github.com/DoorianCH/Recommend-cloths-using-ChatGpt/assets/132414381/cdb8313b-8e63-44c2-806e-7257602256df" width="70%" height="70%"/>
 RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
