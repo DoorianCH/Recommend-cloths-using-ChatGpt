@@ -8,6 +8,7 @@
     1. Don't show your Api_key in a public place!!!
     2. ImportError: cannot import name 'EVENT_TYPE_OPENED' from 'watchdog.events'
     => watchdog.events update : pip install --upgrade watchdog
+    3. You must add an openai_key value for "app.py"(now api_key = "********************************************")
 
 ### Duration
     * 23-05-03 ~ 23-05-31
