@@ -10,7 +10,7 @@
     => watchdog.events update : pip install --upgrade watchdog
 
 ### Duration
-    * 23-05-03 ~ 23-05-12
+    * 23-05-03 ~ 23-05-31
 
 ### Purpose
     1. AI's recommendation simplifies user choice
