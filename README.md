@@ -16,6 +16,9 @@
     1. AI's recommendation simplifies user choice
     2. Identify the user's clothing consumption pattern
     3. Efficient management assistance for sellers through consumption data
+    
+### Structure
+<img src="https://github.com/DoorianCH/DoorianCH/assets/132414381/ed19c022-48fa-4566-a1aa-8d971695e56a" width="70%" height="70%"/>
 
 ### Languge
     * python
@@ -51,6 +54,9 @@ RyulAddress(https://github.com/likemilktea/ChatTrio1stProject)
     1. AI의 추천을 통해 사용자의 선택지 간략화
     2. 사용자의 의상 소비 패턴 파악
     3. 소비 데이터를 통해 판매자의 효율적인 경영 보조
+    
+### 구조도
+<img src="https://github.com/DoorianCH/DoorianCH/assets/132414381/ed19c022-48fa-4566-a1aa-8d971695e56a" width="70%" height="70%"/>
 
 ### 사용 언어
     * python
