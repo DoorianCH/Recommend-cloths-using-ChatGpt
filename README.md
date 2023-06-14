@@ -1,6 +1,6 @@
 * * *
 
-# 👔Recommend-cloths-using-ChatGpt
+# 👔Chat-gpt-api를 활용한 의류 추천 시스템. Recommend-cloths-using-ChatGpt appveyor
 "Weather-based clothing recommendation service" using ChatGpt
 <img width = "80%" src ="https://images.pexels.com/photos/1300550/pexels-photo-1300550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
 
